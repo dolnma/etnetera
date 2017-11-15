@@ -1,0 +1,21 @@
+.footer {
+    height: 177px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $c-white;
+    
+    &__copyright {
+        color: $c-primary;
+    }
+    &__create {
+    }
+    &__text {
+        
+        a {
+            color: $c-primary;
+        }
+    }
+    
+}

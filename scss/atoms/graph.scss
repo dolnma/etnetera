@@ -1,0 +1,129 @@
+#graph {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    #bars {
+        display: flex;
+        width: 800px;
+        height: 350px;
+        justify-content: center;
+        align-items: center;
+        li {
+            display: table-cell;
+            width: 17px;
+            height: 300px;
+            margin: 0;
+            text-align: center;
+            position: relative;
+
+            .bar {
+                display: block;
+                width: 17px;
+                margin-left: 15px;
+                background: $c-primary;
+                position: absolute;
+                bottom: 0;
+
+                &:hover {
+                    background: lighten($c-primary, 15%);
+                    cursor: pointer;
+
+                    &:before {
+                        color: $c-black;
+                        content: attr(data-percentage) '%';
+                        position: relative;
+                        bottom: 20px;
+                    }
+                }
+            }
+            .bar--2 {
+                border-radius: 15px 15px 0 0;
+            }
+
+            span {
+                color: $c-black;
+                width: 100%;
+                position: absolute;
+                bottom: -4em;
+                left: 0;
+                text-align: center;
+
+
+                /* Safari */
+                -webkit-transform: rotate(-90deg);
+
+                /* Firefox */
+                -moz-transform: rotate(-90deg);
+
+                /* IE */
+                -ms-transform: rotate(-90deg);
+
+                /* Opera */
+                -o-transform: rotate(-90deg);
+
+                /* Internet Explorer */
+                filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+            }
+        }
+    }
+}
+
+.graph__logo {
+    width: 30px;
+    height: 42px;
+    margin: 250px 0 0 -5px;
+    background-image: url(/img/vektorov--inteligentn--objekt.png);
+    background-size: cover;
+}
+
+.graph__title {
+    font-size: 21px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: -150px;
+}
+
+.graph__wrap {
+    margin: auto;
+    margin-top: 50px;
+}
+
+.graph__legend {
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    font-size: 13px;
+    display: flex;
+    &__item {
+        display: flex;
+        padding-left: 20px;
+    }
+    &__text {
+        padding-left: 5px;
+    }
+    &__circle {
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+
+        &--1 {
+            background-color: #ffc59b;
+        }
+        &--2 {
+            background-color: #f88c6c;
+        }
+        &--3 {
+            background-color: #e84e0e;
+        }
+
+    }
+}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8">
+    <title>title</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=latin-ext" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__left">
+            <div class="header__logo">
+            </div>
+        </div>
+        <div class="header__right">
+            <button class="navbar__hamburger">&#9776;</button>
+            <button class="navbar__cross">&#735;</button>
+
+            <div class="navbar__mobile">
+                <ul>
+                    <a href="#">
+                        <a href=""><li>DOMŮ</li></a>
+                    </a>
+                    <a href="#">
+                        <a href=""><li>KDO JSME</li></a>
+                    </a>
+                    <a href="#">
+                        <a href=""><li>CO DĚLÁME</li></a>
+                    </a>
+                    <a href="#">
+                        <a href=""><li>REFERENCE</li></a>
+                    </a>
+                    <a href="#">
+                        <a href=""><li>PRÁCE U NÁS (4)</li></a>
+                    </a>
+                    <a href="#">
+                        <a href=""><li>KONTAKT</li></a>
+                    </a>
+                </ul>
+            </div>
+            <ul class="navbar">
+                <a href="#">
+                    <li class="navbar__item">DOMŮ</li>
+                </a>
+                <a href="#">
+                    <li class="navbar__item">KDO JSME</li>
+                </a>
+                <a href="#">
+                    <li class="navbar__item">CO DĚLÁME</li>
+                </a>
+                <a href="#">
+                    <li class="navbar__item">REFERENCE</li>
+                </a>
+                <a href="#">
+                    <li class="navbar__item">PRÁCE U NÁS (4)</li>
+                </a>
+                <a href="#">
+                    <li class="navbar__item">KONTAKT</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="slider__wrap">
+        <div class="slider__control"></div>
+        <div class="slider">
+            <div class="slider__item">
+                <div class="slider__content inner">
+                    <div class="slider__title font--head">
+                        Mobile development
+                    </div>
+                    <div class="slider__text">
+                        <p> Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.</p>
+                        <p>Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+                    </div>
+                    <div class="slider__btn">
+                        <button class="btn__slider">Více o mobile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="slider__content inner">
+                    <div class="slider__title font--head">
+                        Slide 2
+                    </div>
+                    <div class="slider__text">
+                        <p> Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.</p>
+                        <p>Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+                    </div>
+                    <div class="slider__btn">
+                        <button class="btn__slider">slide 2</button>
+                    </div>
+                </div>
+            </div>
+            <div>your content</div>
+        </div>
+    </div>
+    <div class="main__news">
+        <div class="main__news--date">PŘED 12 DNY</div>
+        Jiří Štěpán z Etnetera Activate poodhalil zákulisí vykutálené náborové kampaně.
+        <div class="main__news--read">Přečíst</div>
+    </div>
+    <div class="main__content">
+        <div class="inner">
+            <h1 class="main__content__title font--head">
+                Fronty u kávovaru
+            </h1>
+            <img class="left" src="/img/coffee-cup.jpg">
+            <p>Arabica latte shop macchiato doppio coffee steamed. Brewed, macchiato grounds medium, eu breve grinder frappuccino americano. Pumpkin spice, caffeine chicory dark medium arabica macchiato instant rich. Et, single shot aged half and half lungo whipped, cinnamon cappuccino whipped id mazagran.</p>
+            <p><b>Con panna</b> sugar macchiato so macchiato in skinny variety mug that. A plunger pot acerbic, brewed medium java aromatic coffee. At mocha wings acerbic beans medium saucer. Cup extra sit half and half robust java crema turkish.</p>
+            <p>Medium aroma cream qui medium coffee arabica, caffeine et caramelization cup plunger pot. Eu, plunger pot organic dark, cinnamon, redeye wings fair trade whipped lungo crema. Carajillo caramelization americano, plunger pot, filter coffee foam siphon roast and java.</p>
+            <p>Galão a, breve, at white, latte variety irish at flavour barista. Half and half, so, sweet,
+                <div class="tooltip">affogato galão<span class="tooltip__text">affogato galão</span></div>, half and half sugar irish trifecta chicory. Single origin, espresso, con panna french press et steamed robust.</p>
+            <div class="graph__wrap">
+                <div class="graph__title">Pondělí</div>
+                <div id="graph">
+                    <ul id="bars">
+                        <li>
+                            <div class="graph__logo"></div><span><img src="/img/clock-kopie.png" alt=""></span>
+                        </li>
+                        <li>
+                            <div data-percentage="18" class="bar"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="32" class="bar"></div><span>8:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="31" class="bar"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="29" class="bar"></div><span>9:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="8" class="bar"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="9" class="bar"></div><span>10:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="27" class="bar"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="50" class="bar"></div><span>11:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="48" class="bar"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="45" class="bar"></div><span>12:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="32" class="bar"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="31" class="bar"></div><span>13:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="30" class="bar"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="15" class="bar"></div><span>14:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="18" class="bar"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="23" class="bar"></div><span>15:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="19" class="bar"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="45" class="bar"></div><span>16:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="41" class="bar"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="43" class="bar"></div><span>17:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="44" class="bar"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="33" class="bar"></div><span>18:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="32" class="bar"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="19" class="bar"></div><span>19:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="42" class="bar"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="35" class="bar"></div><span>20:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="19" class="bar"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="18" class="bar"></div><span>21:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="15" class="bar"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="10" class="bar"></div><span>22:00</span>
+                        </li>
+                    </ul>
+                    <div class="graph__legend">
+                        <div class="graph__legend__item">
+                            <div class="graph__legend__circle graph__legend__circle--1"></div>
+                            <div class="graph__legend__text">bez fronty</div>
+                        </div>
+                        <div class="graph__legend__item">
+                            <div class="graph__legend__circle graph__legend__circle--2"></div>
+                            <div class="graph__legend__text">možnost fronty</div>
+                        </div>
+                        <div class="graph__legend__item">
+                            <div class="graph__legend__circle graph__legend__circle--3"></div>
+                            <div class="graph__legend__text">pravděpodobné čekání ve frontě</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="graph__wrap">
+                <div class="graph__title">Pondělí</div>
+                <div id="graph">
+                    <ul id="bars">
+                        <li>
+                            <div class="graph__logo"></div><span><img src="/img/clock-kopie.png" alt=""></span>
+                        </li>
+                        <li>
+                            <div data-percentage="18" class="bar bar--2"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="32" class="bar bar--2"></div><span>8:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="31" class="bar bar--2"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="29" class="bar bar--2"></div><span>9:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="8" class="bar bar--2"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="9" class="bar bar--2"></div><span>10:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="27" class="bar bar--2"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="50" class="bar bar--2"></div><span>11:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="48" class="bar bar--2"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="45" class="bar bar--2"></div><span>12:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="32" class="bar bar--2"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="31" class="bar bar--2"></div><span>13:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="30" class="bar bar--2"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="15" class="bar bar--2"></div><span>14:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="18" class="bar bar--2"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="23" class="bar bar--2"></div><span>15:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="19" class="bar bar--2"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="45" class="bar bar--2"></div><span>16:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="41" class="bar bar--2"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="43" class="bar bar--2"></div><span>17:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="44" class="bar bar--2"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="33" class="bar bar--2"></div><span>18:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="32" class="bar bar--2"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="19" class="bar bar--2"></div><span>19:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="42" class="bar bar--2"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="35" class="bar bar--2"></div><span>20:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="19" class="bar bar--2"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="18" class="bar bar--2"></div><span>21:00</span>
+                        </li>
+                        <li>
+                            <div data-percentage="15" class="bar bar--2"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="10" class="bar bar--2"></div><span>22:00</span>
+                        </li>
+                    </ul>
+                    <div class="graph__legend">
+                        <div class="graph__legend__item">
+                            <div class="graph__legend__circle graph__legend__circle--1"></div>
+                            <div class="graph__legend__text">bez fronty</div>
+                        </div>
+                        <div class="graph__legend__item">
+                            <div class="graph__legend__circle graph__legend__circle--2"></div>
+                            <div class="graph__legend__text">možnost fronty</div>
+                        </div>
+                        <div class="graph__legend__item">
+                            <div class="graph__legend__circle graph__legend__circle--3"></div>
+                            <div class="graph__legend__text">pravděpodobné čekání ve frontě</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="main__content__title">
+                Více o kávě
+            </h2>
+            <div class="main__wrap">
+                <div class="main__wrap__column">
+                    <p>Shop robust café au lait, cortado that, kopi-luwak skinny sweet crema fair trade aged, cultivar medium decaffeinated medium siphon crema cappuccino macchiato froth roast cinnamon aroma crema. Con panna americano skinny blue mountain decaffeinated, trifecta barista sugar, in saucer in filter that. Roast sit, robusta aged spoon, filter beans blue mountain milk crema dark eu affogato barista caffeine grinder, aromatic instant cup as robusta steamed doppio. Aftertaste, kopi-luwak, cappuccino siphon beans galão decaffeinated mug, froth half and half eu java roast, lungo, id fair trade organic doppio filter instant carajillo.</p>
+                    <p>Id siphon and, java, cappuccino milk cortado, siphon macchiato galão a irish flavour. Carajillo irish percolator steamed, medium galão latte, mocha est, medium, iced cappuccino americano, caramelization ristretto, in latte, flavour cup roast trifecta aged. Variety single origin steamed, at, galão bar turkish con panna cream aroma variety carajillo doppio cinnamon. Iced, single shot, est cup shop viennese dark crema macchiato wings single shot plunger pot foam aftertaste so to go white at acerbic a aftertaste.</p>
+                </div>
+                <div class="main__wrap__column">
+                    <p>
+                        Irish carajillo decaffeinated instant, pumpkin spice as, cup, dripper strong breve, est white crema viennese latte. Irish cup medium body organic, white americano galão plunger pot coffee, robust, carajillo, steamed, cream, java, cinnamon mazagran so caffeine latte flavour. Shop, turkish iced qui that steamed sweet, mazagran, macchiato est robusta spoon as, rich eu crema, chicory foam single shot organic sugar galão seasonal trifecta. Viennese half and half organic aged extraction cup, espresso irish latte mug grinder turkish variety.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__copyright">
+            COPYRIGHT
+        </div>
+        <div class="footer__create">
+            © 2015 ETNETERA
+        </div>
+        <div class="footer__text">
+            Jsme hrdým členem <a href="#">Etnetera Group</a>
+        </div>
+    </div>
+
+    <script src="/js/lib/jquery-3.1.1.min.js"></script>
+    <script src="/js/lib/slick.min.js"></script>
+    <script src="/js/lib/ofi.browser.min.js"></script>
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>

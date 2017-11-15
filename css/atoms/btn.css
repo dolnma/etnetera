@@ -1,0 +1,8 @@
+.btn {
+  display: inline-block; }
+
+.btn__slider {
+  width: 235px;
+  height: 44px;
+  border: 1px solid #e84d0f;
+  background-color: #ffffff; }

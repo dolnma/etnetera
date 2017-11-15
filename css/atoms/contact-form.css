@@ -1,0 +1,18 @@
+.contact-form {
+  margin-top: 10%; }
+  .contact-form input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #000000; }
+  .contact-form-select input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #000000; }
+  .contact-form-inputs input[type=text]:focus {
+    border: 3px solid #000; }

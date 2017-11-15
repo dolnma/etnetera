@@ -1,0 +1,99 @@
+body *,
+body *:after,
+body *:before {
+    box-sizing: border-box;
+}
+
+// font
+body {
+    font-family: $font-base;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+// font-head
+.font--head {
+    font-weight: 300;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.scroll-inside {
+    overflow-x: auto;
+}
+
+.inner {
+    @include inner;
+    @include clearfix;
+    padding: 0 30px 0 30px;
+    @media screen and (max-width: $break-lg) {
+        padding: 0 20px 0 20px;
+    }
+}
+
+::selection {
+    background: rgba(#acacac, 0.5);
+}
+
+::-moz-selection {
+    background: rgba(#acacac, 0.5);
+}
+
+.clear {
+    clear: both;
+}
+
+a,
+input[type="submit"],
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    line-height: 30px;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+}
+
+[data-expandable] {
+    display: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+b {
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+    padding-right: 20px;
+}
